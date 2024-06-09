@@ -1,0 +1,26 @@
+Multithreading	✅
+Binding a proxy to a session	✅
+Auto-purchase of items if you have coins (tap, energy, charge)	✅
+Random sleep time between clicks	✅
+Random number of clicks per request	✅
+Support tdata / pyrogram .session / telethon .session	✅
+
+API_ID / API_HASH	- Platform data from which to launch a Telegram session (stock - Android)
+MIN_AVAILABLE_ENERGY -	Minimum amount of available energy, upon reaching which there will be a delay (eg 100)
+SLEEP_BY_MIN_ENERGY -	Delay when reaching minimum energy in seconds (eg 200)
+AUTO_UPGRADE -	Whether to upgrade the passive earn (True / False)
+MAX_LEVEL -	Maximum upgrade level (eg 20)
+APPLY_DAILY_ENERGY -	Whether to use the daily free energy boost (True / False)
+APPLY_DAILY_TURBO -	Whether to use the daily free turbo boost (True / False)
+RANDOM_CLICKS_COUNT -	Random number of taps (eg [50,200])
+SLEEP_BETWEEN_TAP -	Random delay between taps in seconds (eg [10,25])
+USE_PROXY_FROM_FILE -	Whether to use proxy from the bot/config/proxies.txt file (True / False)
+
+Installation
+#Windows
+~/HamsterKombatBot >>> python -m venv venv
+~/HamsterKombatBot >>> venv\Scripts\activate
+~/HamsterKombatBot >>> pip install -r requirements.txt
+~/HamsterKombatBot >>> copy .env-example .env
+~/HamsterKombatBot >>> # Specify your API_ID and API_HASH, the rest is taken by default
+~/HamsterKombatBot >>> python main.py
